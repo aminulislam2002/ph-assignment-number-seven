@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      span {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <h1 class="text-center text-4xl font-bold">This is blog page</h1>
+    </header>
+    <main class="container mx-auto">
+      <!-- Question section  -->
+      <section>
+        <div>
+          <div class="text-2xl font-medium">
+            <h3 class="text-2xl font-bold">
+              Question 01: What is the deference between .map(), .filter(), .forEach() and .find()?
+            </h3>
+            Answer:
+            <p>
+              <span>.map()</span> methods is used to executes the same code on every element in an array and returns a new
+              array with the selected updated elements.
+            </p>
+            <p>
+              <span>.filter()</span> methods is used to checks every element in an array to see if it meets a certain
+              criteria and returns a new array with the elements that return truthy for the criteria.
+            </p>
+            <p>
+              <span>.forEach()</span> methods is used to execute the same code on every element in an array but does not
+              change the array and it will not returns anything
+            </p>
+            <p>
+              <span>.find()</span> is used to returns the first element in the provided array that satisfies the provided
+              testing function. If no values satisfy the testing function, undefined is returned.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-2xl font-medium">
+          <h3 class="text-2xl font-bold">
+            Question 02: What is the deference between Local Storage, Session Storage and Cookies?
+          </h3>
+          Answer:
+          <p>
+            <span>Local Storage:</span> It is a web storage method that helps us store data without any expiration date.
+            Saving data is not deleted when the browser is closed and data is available for future sessions. Stored data in
+            key\value pairs in the browser.
+          </p>
+          <p>
+            <span>Session Storage:</span> It is a web storage method that helps us stores in browser for a session. Saving
+            data is deleted when the browser is closed and data is not available for future sessions in key\value pairs in
+            the browser.
+          </p>
+          <p>
+            <span>Cookie:</span> It is a web storage method that data stored in small text file. Naturally sent by visited
+            websites. Sent to users computer through browser. Is not a program, dosen't perform any function. Stored data in
+            key\value pairs in the browser.
+          </p>
+        </div>
+        <div class="text-2xl font-medium">
+          <h3 class="text-2xl font-bold">Question 03: What is js event loop? and how it works?</h3>
+          <p>
+            The event loop is the secret behind JavaScript's asynchronous programming. JS executes all operations on a single
+            thread, but using a few smart data structures, it gives us the illusion of multi-threading.
+            <br />
+            <span>Call Starck:</span> Keeps track of all the operations in line to be execute. Whenever a function is
+            finished, it is popped from the stack.
+            <br />
+            <span>Event Queue:</span> Sends new functions to the stack for processing. Follows the queue data structure.
+            Maintains the currect sequence in whice all operations should be sent for executions.
+          </p>
+        </div>
+        <div class="text-2xl font-medium">
+          <span>quizTimer function:</span> The quizTimer function return quiz in 60s. If late then the function don't work.
+          <br />
+          <span>chooseQuiz function:</span> The chooseQuiz function return quiz answer and display quiz answer.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
